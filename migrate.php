@@ -1,7 +1,8 @@
 <?php
 
-require 'bootstrap.php';
+require './bootstrap.php';
 
-$app = new Shortener\App;
+use Shortener\App;
 
+$app = new App($connection);
 $app->migrate();
